@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding-top: 100px;
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 50px;
+
+}
+
+.result {
+  background-color: hsl(241, 81%, 54%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 50px;
+  border-radius: 20px;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color:  hsl(234, 85%, 45%);
+  padding: 35px 50px;
+  border-radius: 100%;
+}
+
+.current-point {
+  font-size: 50px;
+  font-weight: 800;
+  color: hsl(221, 100%, 96%);
+}
+
+.max-point {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+}
+
+.result h2 {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: hsl(241, 100%, 89%);
+}
+
+.great {
+  color: hsl(221, 100%, 96%);
+  font-size: 25px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: hsl(241, 100%, 89%);
+  font-weight: 500;
+}
+
+.summary {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.15);
+  border-radius: 0 20px 20px 0;
+}
+
+.summary h2 {
+  color: hsl(224, 30%, 27%);
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(0, 100%, 80%, 20%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 85%;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+}
+
+.start img {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.start span {
+  font-size: 1rem;
+  color: hsl(0, 100%, 67%);
+  font-weight: 800;
+}
+
+.end h3 span {
+  color: hsl(224, 30%, 27%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 15px;
+  color: hsl(241, 100%, 89%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.card-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(39, 100%, 56%, 20%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 85%;
+}
+
+.card-2 span {
+  color: hsl(39, 100%, 56%);
+}
+
+.card-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(166, 100%, 37%, 20%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 85%;
+}
+
+.card-3 span {
+  color: hsl(166, 100%, 37%);
+}
+
+.card-4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsla(234, 85%, 45%, 20%);
+  border-radius: 5px;
+  width: 85%;
+  margin-bottom: 40px;
+}
+
+.card-4 span {
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  width: 85%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(221, 100%, 96%);
+  background: hsl(224, 30%, 27%);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: calc(0.1s);
+}
+
+button:hover {
+  background-color: hsl(241, 81%, 54%);
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+   text-decoration: none;
+   color: hsl(241, 81%, 54%);
+}
+.attribution a:hover {
+  color: hsl(252, 100%, 67%);
+  cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .result {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .result p {
+    font-size: 20px;
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    box-shadow: none;
+    padding-left: 50px;
+  }
+}
